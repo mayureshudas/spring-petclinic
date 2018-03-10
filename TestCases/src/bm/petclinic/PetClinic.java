@@ -15,10 +15,10 @@ public class PetClinic {
 	@BeforeSuite
 
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", "D:\\Users\\maudas\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
-		driver=new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "D:\\Users\\maudas\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 		driver.get("http://shoppingcart.r6fzqtkyvm.us-west-2.elasticbeanstalk.com");
 		
 	}
