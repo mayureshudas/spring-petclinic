@@ -35,6 +35,7 @@ public class PetClinic {
 		}
 		
 		//driver.findElement(By.xpath("//div[@id='main-navbar']/ul/li[3]/a")).click();
+        //System.out.println("Issue with application ");
 		
 	}
 }
