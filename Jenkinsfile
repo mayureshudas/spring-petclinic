@@ -1,3 +1,7 @@
+libraries {
+  lib('jenkins-library')
+}
+
 pipeline {
     agent any
 
