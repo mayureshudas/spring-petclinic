@@ -1,6 +1,4 @@
-libraries {
-  lib('jenkins-library')
-}
+@Library('jenkins-library')_
 
 pipeline {
     agent any
