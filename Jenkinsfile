@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh label: '', script: 'mvn package'
+               sh label: '', script: 'pwd'
             }
         }
         stage('Test') {
