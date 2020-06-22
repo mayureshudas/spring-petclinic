@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh label: '', script: 'pwd'
+               sh label: '', script: 'sudo yum install maven'
             }
         }
         stage('Test') {
