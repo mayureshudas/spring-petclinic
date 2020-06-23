@@ -15,7 +15,8 @@ pipeline {
         
         stage('Build') {
             steps {
-               sh label: '', script: '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn package'
+                sh label: '', script: 'mvn -version'
+               sh label: '', script: 'mvn package'
             }
         }
         stage('Test') {
