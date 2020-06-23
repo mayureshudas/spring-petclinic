@@ -15,8 +15,9 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh label: '', script: 'mvn -version'
-               sh label: '', script: 'mvn package'
+                buildmaven()
+                //sh label: '', script: 'mvn -version'
+               //sh label: '', script: 'mvn package'
             }
         }
         stage('Test') {
