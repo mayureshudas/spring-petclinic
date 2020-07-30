@@ -1,6 +1,6 @@
 def buildmaven() {
        
-       sh "./mvnw spring-boot:run"
+       sh "./mvnw package"
   
 }
 
